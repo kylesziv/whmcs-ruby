@@ -19,7 +19,8 @@ module WHMCS
 
       params.merge!(
         :username => WHMCS.config.api_username,
-        :password => WHMCS.config.api_password
+        :password => WHMCS.config.api_password,
+        :accesskey => WHMCS.config.api_key
       )
 
       url = URI.parse(WHMCS.config.api_url)
